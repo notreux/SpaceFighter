@@ -1,0 +1,38 @@
+{
+	"name": "My first 2D Game",
+	"tree": {
+		"$className": "DataModel",
+		"ReplicatedStorage": {
+			"$className": "ReplicatedStorage",
+			"Dependencies": {
+				"$className": "Folder",
+				"$path": "Dependencies"
+			},
+			"Packages": {
+				"$className": "Folder",
+				"$path": "Packages"
+			},
+			"shared": {
+				"$className": "Folder",
+				"$path": "src/shared"
+			}
+		},
+
+		"StarterPlayer": {
+			"$className": "StarterPlayer",
+			"StarterPlayerScripts": {
+				"$className": "StarterPlayerScripts",
+				"client": {
+					"$path": "src/client"
+				}
+			}
+		},
+
+		"ServerScriptService": {
+			"$className": "ServerScriptService",
+			"server": {
+				"$path": "src/server"
+			}
+		}
+	}
+}

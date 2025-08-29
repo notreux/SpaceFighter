@@ -1,0 +1,3 @@
+[submodule "Dependencies/UpsideEngine"]
+	path = Dependencies/UpsideEngine
+	url = https://github.com/notreux/UpsideEngine
