@@ -1,6 +1,6 @@
 local Players = game:GetService("Players")
 local replicatedStorage = game:WaitForChild("ReplicatedStorage")
-local packages = replicatedStorage:WaitForChild("Dependencies")
+local packages = replicatedStorage:WaitForChild("Packages")
 local modules = script.Parent:WaitForChild("modules")
 
 local setup = require(replicatedStorage.shared.util.setup)

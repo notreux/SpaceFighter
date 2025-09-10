@@ -120,7 +120,12 @@ dependencies = [["Promise", "evaera/promise@4.0.0"]]
 [[package]]
 name = "notreux/space-fighter"
 version = "0.1.0"
-dependencies = [["ByteNet", "ffrostflame/bytenet@0.4.6"], ["React", "jsdotlua/react@17.2.1"], ["ReactReflex", "littensy/react-reflex@0.3.6"], ["ReactRoblox", "jsdotlua/react-roblox@17.2.1"], ["ReactSpring", "chriscerie/react-spring@2.0.0"], ["Reflex", "littensy/reflex@4.3.1"], ["Sift", "csqrl/sift@0.0.9"]]
+dependencies = [["ByteNet", "ffrostflame/bytenet@0.4.6"], ["React", "jsdotlua/react@17.2.1"], ["ReactReflex", "littensy/react-reflex@0.3.6"], ["ReactRoblox", "jsdotlua/react-roblox@17.2.1"], ["ReactSpring", "chriscerie/react-spring@2.0.0"], ["Reflex", "littensy/reflex@4.3.1"], ["Sift", "csqrl/sift@0.0.9"], ["UpsideEngine", "notreux/upsideengine@3.0.0"]]
+
+[[package]]
+name = "notreux/upsideengine"
+version = "3.0.0"
+dependencies = []
 
 [[package]]
 name = "roblox/testez"

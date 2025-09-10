@@ -1,6 +1,6 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
-local UpsideEngine = require(ReplicatedStorage.Dependencies.UpsideEngine)
+local UpsideEngine = require(ReplicatedStorage.Packages.UpsideEngine)
 -- imports
 local function createParallaxStars(scene, url)
 	local stars = UpsideEngine.new("Parallax")

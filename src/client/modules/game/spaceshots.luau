@@ -1,6 +1,6 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
-local UpsideEngine = require(ReplicatedStorage.Dependencies.UpsideEngine)
+local UpsideEngine = require(ReplicatedStorage.Packages.UpsideEngine)
 local SceneManager = UpsideEngine.GetService("SceneManager")
 
 -- imports

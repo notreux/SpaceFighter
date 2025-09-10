@@ -6,7 +6,7 @@ local client = script.Parent.Parent.Parent
 local selectors = require(client.producers.selectors)
 local producers = require(client.producers)
 local spaceshots = require(script.Parent.spaceshots)
-local UpsideEngine = require(ReplicatedStorage.Dependencies.UpsideEngine)
+local UpsideEngine = require(ReplicatedStorage.Packages.UpsideEngine)
 
 local CrossPlatformService = UpsideEngine.GetService("CrossPlatformService")
 local SceneManager = UpsideEngine.GetService("SceneManager")

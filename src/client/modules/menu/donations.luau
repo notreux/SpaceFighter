@@ -4,7 +4,7 @@ local client = script.Parent.Parent.Parent
 local producers = require(client.producers)
 local selectors = require(client.producers.selectors)
 local spaceship = require(client.modules.game.spaceship)
-local UpsideEngine = require(ReplicatedStorage.Dependencies.UpsideEngine)
+local UpsideEngine = require(ReplicatedStorage.Packages.UpsideEngine)
 -- imports
 local exports = {}
 function exports.load(scene: Scene)

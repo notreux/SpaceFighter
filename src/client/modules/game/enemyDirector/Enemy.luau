@@ -1,8 +1,11 @@
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local packages = ReplicatedStorage.Packages
 local client = script.Parent.Parent.Parent.Parent
+
+local wallyUpsideEngine = packages._Index["notreux_upsideengine@3.0.0"].upsideengine
 local spaceship = require(client.modules.game.spaceship)
-local UpsideEngine = require(ReplicatedStorage.Dependencies.UpsideEngine)
-local Character = require(ReplicatedStorage.Dependencies.UpsideEngine.Classes.Public.Character)
+local UpsideEngine = require(ReplicatedStorage.Packages.UpsideEngine)
+local Character = require(wallyUpsideEngine.Classes.Public.Character)
 local spaceshots = require(client.modules.game.spaceshots)
 
 local Enemy = {}
