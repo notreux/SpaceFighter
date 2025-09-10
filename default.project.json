@@ -4,10 +4,6 @@
 		"$className": "DataModel",
 		"ReplicatedStorage": {
 			"$className": "ReplicatedStorage",
-			"Dependencies": {
-				"$className": "Folder",
-				"$path": "Dependencies"
-			},
 			"Packages": {
 				"$className": "Folder",
 				"$path": "Packages"
