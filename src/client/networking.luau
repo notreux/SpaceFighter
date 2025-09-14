@@ -14,7 +14,6 @@ packets.donationRankingUpdate.listen(function(ranking)
 end)
 
 packets.donationCompleted.listen(function(ranking)
-	task.wait(1.5)
 	local oldSkin = spaceship.getSpaceshipSkin(oldRanking)
 	local newSkin = spaceship.getSpaceshipSkin(ranking)
 
@@ -23,4 +22,5 @@ packets.donationCompleted.listen(function(ranking)
 	end
 end)
 
+packets.requestRankingUpdate.send()
 return {}

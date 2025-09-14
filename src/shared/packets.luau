@@ -15,5 +15,8 @@ return ByteNet.defineNamespace("main", function()
 				amount = ByteNet.uint32,
 			})),
 		}),
+		requestRankingUpdate = ByteNet.definePacket({
+			value = ByteNet.nothing,
+		}),
 	}
 end)

@@ -12,15 +12,15 @@ local exports = {}
 function exports.load()
 	-- initialization code
 	local ranking = donationRanking.getRanking()
-	local function playerSetup(player)
+	local function playerSetup(_, player: Player)
 		packets.donationRankingUpdate.sendTo(ranking, player)
 	end
 
 	for _, player in Players:GetPlayers() do
-		playerSetup(player)
+		playerSetup(nil, player)
 	end
 
-	exports.playerAddedCn = Players.PlayerAdded:Connect(playerSetup)
+	packets.requestRankingUpdate.listen(playerSetup)
 	exports.donactionCn = donationRanking.newDonation:Connect(function(player, ranking)
 		packets.donationCompleted.sendTo(ranking, player)
 		packets.donationRankingUpdate.sendToAll(ranking)
@@ -45,7 +45,6 @@ end
 function exports.unload()
 	-- code to run before the server is closed
 	exports.heartbeatCn:Disconnect()
-	exports.playerAddedCn:Disconnect()
 	exports.donactionCn:Disconnect()
 end
 
